@@ -37,7 +37,7 @@ a:focus {
 .wrapper {
     position: relative;
     width: 100%;
-    max-width: 1366px;
+    max-width: 1566px;
     margin: 0 auto;
     background: #ffffff;
 }
@@ -71,6 +71,10 @@ a:focus {
     transition: .3s;
 }
 
+:root {
+  --secondary:#cccaca;
+  --primary:#00585d ;
+}
 
 /**********************************/
 /********** Top Bar CSS ***********/
@@ -78,7 +82,7 @@ a:focus {
 .top-bar {
     position: relative;
     height: 90px;
-    background: #fdbe33;
+    background: var(--secondary);
 }
 
 .top-bar .logo {
@@ -89,8 +93,13 @@ a:focus {
 
 .top-bar .logo h1 {
     margin: 0;
-    color: #030f27;
-    font-size: 60px;
+    color: var(--primary);
+    background-image: linear-gradient(to left,rgba(3, 23, 62, 0.7), #07737f, #0f5c52);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: 40px;
     line-height: 60px;
     font-weight: 700;
 }
@@ -115,7 +124,7 @@ a:focus {
 
 .top-bar .top-bar-icon [class^="flaticon-"]::before {
     margin: 0;
-    color: #030f27;
+    color: var(--primary);
     font-size: 40px;
 }
 
@@ -125,14 +134,14 @@ a:focus {
 
 .top-bar .top-bar-text h3 {
     margin: 0 0 5px 0;
-    color: #030f27;
+    color: var(--primary);
     font-size: 16px;
     font-weight: 400;
 }
 
 .top-bar .top-bar-text p {
     margin: 0;
-    color: #030f27;
+    color: var(--primary);
     font-size: 13px;
     font-weight: 400;
 }
@@ -155,7 +164,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #fdbe33;
+    background: var(--secondary);
     transition: .3s;
 }
 
@@ -167,14 +176,15 @@ a:focus {
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 1366px;
+    max-width: 1566px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     z-index: 999;
 }
 
 .nav-bar .navbar {
     height: 100%;
-    background: #030f27 !important;
+    background: var(--primary);
+    background-image: linear-gradient(to left,rgba(3, 23, 62, 0.7), #07737f, #0f5c52);
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -182,13 +192,14 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     padding: 10px 10px 8px 10px;
-    color: #ffffff;
+    color: #f1ecec;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #fdbe33;
+    color: white;
     transition: none;
+    font-weight: 600;
 }
 
 .nav-bar .dropdown-menu {
@@ -286,7 +297,6 @@ a:focus {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .3);
     z-index: 1;
 }
 
@@ -303,15 +313,20 @@ a:focus {
 }
 
 .carousel .carousel-caption p {
-    color: #ffffff;
+    color: var(--primary);
     font-size: 30px;
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
 
 .carousel .carousel-caption h1 {
-    color: #ffffff;
-    font-size: 60px;
+    color: var(--primary);
+    background-image: linear-gradient(to left,rgba(3, 23, 62, 0.7), #07737f, #0f5c52);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 35px;
 }
@@ -322,17 +337,17 @@ a:focus {
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--primary);
     background: transparent;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--primary);
     border-radius: 0;
     transition: .3s;
 }
 
 .carousel .carousel-caption .btn:hover {
-    color: #030f27;
-    background: #fdbe33;
-    border-color: #fdbe33;
+    color: var(--secondary);
+    background: var(--primary);
+    border-color: var(--secondary);
 }
 
 @media (max-width: 767.98px) {
@@ -472,7 +487,7 @@ a:focus {
 }
 
 .section-header p {
-    color: #fdbe33;
+    color: var(--secondary);
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -501,12 +516,12 @@ a:focus {
 }
 
 .feature .col-md-12 {
-    background: #030f27;
+    background: var(--primary);
 }
     
 .feature .col-md-12:nth-child(2n) {
     color: #030f27;
-    background: #fdbe33;
+    background: var(--secondary);
 }
 
 .feature .feature-item {
@@ -622,9 +637,9 @@ a:focus {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #030f27;
+    color: var(--primary);
     border-radius: 0;
-    background: #fdbe33;
+    background: var(--secondary);
     transition: .3s;
 }
 
@@ -697,12 +712,12 @@ a:focus {
 
 .fact .fact-left {
     color: #fdbe33;
-    background: #030f27;
+    background: var(--primary);
 }
 
 .fact .fact-right {
     color: #030f27;
-    background: #fdbe33;
+    background: var(--secondary);
 }
 
 .fact .fact-left h2 {
@@ -729,10 +744,13 @@ a:focus {
 .service .service-img {
     position: relative;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .service .service-img img {
     width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 
 .service .service-overlay {
@@ -763,7 +781,8 @@ a:focus {
     display: flex;
     align-items: center;
     height: 60px;
-    background: #030f27;
+    background: var(--primary);
+    background-image: linear-gradient(to left,rgba(3, 23, 62, 0.7), #07737f, #0f5c52);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -773,13 +792,13 @@ a:focus {
     margin: 0;
     padding: 0 15px 0 25px;
     width: calc(100% - 60px);
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 700;
-    color: #fdbe33;
+    color: white;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow: clip;
 }
 
 .service .service-item a.btn {
@@ -793,7 +812,7 @@ a:focus {
     line-height: 60px;
     font-weight: 100;
     color: #030f27;
-    background: #fdbe33;
+    background: var(--secondary);;
     border-radius: 0;
     transition: .3s;
 }
@@ -844,7 +863,7 @@ a:focus {
     display: block;
     width: 100px;
     height: 100px;
-    background: #fdbe33;
+    background: var(--secondary);
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
 }
@@ -859,7 +878,7 @@ a:focus {
     display: block;
     width: 100px;
     height: 100px;
-    background: #fdbe33;
+    background: var(--secondary);
     border-radius: 50%;
     transition: all 200ms;
 }
@@ -951,14 +970,14 @@ a:focus {
     position: relative;
     padding: 25px 15px;
     text-align: center;
-    background: #030f27;
+    background: var(--primary);
     transition: .5s;
 }
 
 .team .team-text h2 {
     font-size: 20px;
     font-weight: 600;
-    color: #fdbe33;
+    color: var(--secondary);
     transition: .5s;
 }
 
@@ -968,7 +987,7 @@ a:focus {
 }
 
 .team .team-item:hover .team-text {
-    background: #fdbe33;
+    background: var(--secondary);
 }
 
 .team .team-item:hover .team-text h2 {
@@ -2059,6 +2078,7 @@ a:focus {
     margin-top: 45px;
     padding-top: 90px;
     background: #030f27;
+    background-image: linear-gradient(to left,rgba(3, 23, 62, 0.7), #07737f, #0f5c52);
     color: #ffffff;
 }
 
