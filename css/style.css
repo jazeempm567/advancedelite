@@ -72,8 +72,8 @@ a:focus {
 }
 
 :root {
-  --secondary:#cccaca;
-  --primary:#00585d ;
+  --secondary:#00585d;
+  --primary:white ;
 }
 
 /**********************************/
@@ -82,7 +82,15 @@ a:focus {
 .top-bar {
     position: relative;
     height: 90px;
-    background: var(--secondary);
+    
+    /* background: var(--secondary); */
+}
+.top-section{
+    height: 1000px;
+    background-image: url('../img/advanced_web_pic.jpeg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;   */
+    background-size: cover;
 }
 
 .top-bar .logo {
@@ -94,11 +102,11 @@ a:focus {
 .top-bar .logo h1 {
     margin: 0;
     color: var(--primary);
-    background-image: linear-gradient(to left,rgba(3, 23, 62, 0.7), #07737f, #0f5c52);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    /* background-image: linear-gradient(to left,rgba(3, 23, 62, 0.7), #07737f, #0f5c52); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent;  */
+    /* -moz-background-clip: text; */
+    /* -moz-text-fill-color: transparent; */
     font-size: 40px;
     line-height: 60px;
     font-weight: 700;
@@ -164,7 +172,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: var(--secondary);
+    /* background: var(--secondary); */
     transition: .3s;
 }
 
@@ -177,14 +185,15 @@ a:focus {
     top: 0;
     width: 100%;
     max-width: 1566px;
+    /* background-image: linear-gradient(to left,rgba(3, 23, 62, 0.7), #07737f, #0f5c52); */
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     z-index: 999;
 }
 
 .nav-bar .navbar {
     height: 100%;
-    background: var(--primary);
-    background-image: linear-gradient(to left,rgba(3, 23, 62, 0.7), #07737f, #0f5c52);
+    /* background-color:#00acee; */
+    background-image: linear-gradient(to left,white, white);
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -192,12 +201,12 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     padding: 10px 10px 8px 10px;
-    color: #f1ecec;
+    color: black;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: white;
+    color: black;
     transition: none;
     font-weight: 600;
 }
@@ -400,7 +409,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 90px 0;
     text-align: center;
-    background: #fdbe33;
+    background: var(--secondary);
 }
 
 .page-header h2 {
@@ -430,7 +439,7 @@ a:focus {
 }
 
 .page-header a:hover {
-    color: #ffffff;
+    color: var(--primary);
 }
 
 .page-header a::after {
@@ -2078,7 +2087,11 @@ a:focus {
     margin-top: 45px;
     padding-top: 90px;
     background: #030f27;
-    background-image: linear-gradient(to left,rgba(3, 23, 62, 0.7), #07737f, #0f5c52);
+    background-image: url('../img/footer_bg.jpg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;   */
+    background-size: cover;
+    /* background-image: linear-gradient(to left,rgba(3, 23, 62, 0.7), #07737f, #0f5c52); */
     color: #ffffff;
 }
 
