@@ -25,7 +25,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #fdbe33;
+    color: #00585d;
     outline: none;
     text-decoration: none;
 }
@@ -86,8 +86,35 @@ a:focus {
     /* background: var(--secondary); */
 }
 .top-section{
-    height: 1000px;
+    height: 100vh;
     background-image: url('../img/advanced_web_pic.jpeg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;   */
+    background-size: cover;
+}
+  
+  /* Media query for devices with a minimum height of 800px */
+  @media only screen and (max-width: 600px) {
+    .top-section {
+      height:32vh; /* Adjusted height for larger screens */
+      background-size: cover;
+    }
+    .top-bar{
+        display: none;
+    }
+    .navbar-brand{
+        font-weight: bold;
+        color: #00585d !important;
+    }
+    .navbar-toggler{
+        border: 2px solid #00585d !important;
+    }
+  }
+
+
+.top-section-subpages{
+    height: 42vh;
+    background-image: url('../img/footer_bg.jpg');
     background-repeat: no-repeat;
     /* background-attachment: fixed;   */
     background-size: cover;
@@ -219,15 +246,15 @@ a:focus {
 }
 
 .nav-bar .btn {
-    color: #ffffff;
-    border: 2px solid #ffffff;
+    color: #00585d;
+    border: 2px solid #00585d;
     border-radius: 0;
 }
 
 .nav-bar .btn:hover {
-    color: #030f27;
-    background: #fdbe33;
-    border-color: #fdbe33;
+    color: white;
+    background: #00585d;
+    border-color: #00585d;
 }
 
 @media (min-width: 992px) {
@@ -252,6 +279,15 @@ a:focus {
         font-size: 15px;
         text-transform: uppercase;
     }
+}
+
+.navbar-toggler{
+    background-color: white;
+    border-color: #00585d;
+    color: #00585d;
+}
+.navbar-toggler-icon{
+    color: #00585d !important;
 }
 
 @media (max-width: 991.98px) {
@@ -409,12 +445,11 @@ a:focus {
     margin-bottom: 45px;
     padding: 90px 0;
     text-align: center;
-    background: var(--secondary);
 }
 
 .page-header h2 {
     position: relative;
-    color: #030f27;
+    color: white;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -428,14 +463,14 @@ a:focus {
     height: 2px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: #030f27;
+    background: white;
 }
 
 .page-header a {
     position: relative;
     padding: 0 12px;
     font-size: 22px;
-    color: #030f27;
+    color: white;
 }
 
 .page-header a:hover {
@@ -450,7 +485,7 @@ a:focus {
     top: -2px;
     right: -7px;
     text-align: center;
-    color: #121518;
+    color: white;
 }
 
 .page-header a:last-child::after {
