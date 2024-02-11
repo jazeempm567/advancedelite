@@ -1092,22 +1092,13 @@ a:focus {
 .faqs {
     position: relative;
     width: 100%;
-    padding: 45px 0;
+    padding: 45px;
 }
 
 .faqs .row {
     position: relative;
 }
 
-.faqs .row::after {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 100%;
-    top: 0;
-    left: calc(50% - .5px);
-    background: #fdbe33;
-}
 
 .faqs #accordion-1 {
     padding-right: 15px;
@@ -2003,7 +1994,7 @@ a:focus {
 }
 
 .contact .col-md-6:last-child {
-    background: #fdbe33;
+    background: var(--secondary);
 }
 
 .contact .contact-info {
@@ -2024,7 +2015,7 @@ a:focus {
 
 .contact .contact-item [class^="flaticon-"]::before {
     margin: 0;
-    color: #fdbe33;
+    color: white;
     font-size: 40px;
 }
 
@@ -2035,14 +2026,14 @@ a:focus {
 }
 
 .contact .contact-text h2 {
-    color: #fdbe33;
+    color: white;
     font-size: 20px;
     font-weight: 600;
 }
 
 .contact .contact-text p {
     margin: 0;
-    color: #ffffff;
+    color: #dddddd;
     font-size: 16px;
 }
 
@@ -2095,7 +2086,7 @@ a:focus {
     padding: 16px 30px;
     font-size: 16px;
     font-weight: 600;
-    color: #fdbe33;
+    color: white;
     background: #030f27;
     border: none;
     border-radius: 0;
