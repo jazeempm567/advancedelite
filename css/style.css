@@ -1990,11 +1990,11 @@ a:focus {
 }
 
 .contact .col-md-6:first-child {
-    background: #030f27;
+    background: var(--secondary);
 }
 
 .contact .col-md-6:last-child {
-    background: var(--secondary);
+    background:#030f27;
 }
 
 .contact .contact-info {
